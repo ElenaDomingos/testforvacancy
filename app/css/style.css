@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  background: #f2f2f2;
+}
+
+.container {
+  width: 665px;
+  max-width: 100%;
+  height: 481px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.container .left-block {
+  width: 137px;
+  height: 100%;
+  background: #5A61ED;
+}
+.container .left-block .title-left-block {
+  color: #fff;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 49px;
+  line-height: 63px;
+  letter-spacing: 0.5px;
+  transform: rotate(-90deg);
+  position: relative;
+  right: 5px;
+  top: 296px;
+  width: 200px;
+}
+.container .right-block {
+  background: #fff;
+  padding-left: 20px;
+  padding-top: 28px;
+  width: 527px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+h3.title-right-block {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 0;
+}
+
+p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  bottom: 10px;
+  color: #111111;
+}
+
+span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: #111111;
+}
+
+form.sign-up-form .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 485px;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+form.sign-up-form .col-6-select select {
+  position: relative;
+  top: 8px;
+  padding: 0;
+  padding-bottom: 10px;
+}
+form.sign-up-form .col-6-input,
+form.sign-up-form .col-6-select {
+  width: 230px;
+  max-width: 100%;
+}
+form.sign-up-form .col-6-input .container-nationality,
+form.sign-up-form .col-6-select .container-nationality {
+  position: relative;
+  bottom: 17px;
+}
+form.sign-up-form .col-6-input input,
+form.sign-up-form .col-6-select input {
+  background: transparent;
+}
+form.sign-up-form .col-6-input .container-birth-date,
+form.sign-up-form .col-6-select .container-birth-date {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 18px;
+}
+form.sign-up-form .col-6-input .container-gender input[type=radio],
+form.sign-up-form .col-6-select .container-gender input[type=radio] {
+  display: none;
+}
+form.sign-up-form .col-6-input .container-gender input[type=radio] + label,
+form.sign-up-form .col-6-select .container-gender input[type=radio] + label {
+  color: #111111;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  position: relative;
+  top: 8px;
+}
+form.sign-up-form .col-6-input .container-gender input[type=radio] label > span,
+form.sign-up-form .col-6-select .container-gender input[type=radio] label > span {
+  position: relative;
+  bottom: 10px !important;
+  top: 0 !important;
+}
+form.sign-up-form .col-6-input .container-gender input[type=radio] + label span,
+form.sign-up-form .col-6-select .container-gender input[type=radio] + label span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #5A61ED;
+  border-radius: 50%;
+  margin: -2px 3px 15px 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+form.sign-up-form .col-6-input .container-gender input[type=radio]:checked + label span,
+form.sign-up-form .col-6-select .container-gender input[type=radio]:checked + label span {
+  background: url("../img/circle.png") 0.3px;
+  background-size: cover;
+  z-index: 100000;
+}
+form.sign-up-form .col-6-input .container-birth-date,
+form.sign-up-form .col-6-input .container-gender,
+form.sign-up-form .col-6-select .container-birth-date,
+form.sign-up-form .col-6-select .container-gender {
+  width: 100%;
+}
+form.sign-up-form .col-6-input .container-birth-date select,
+form.sign-up-form .col-6-input .container-gender select,
+form.sign-up-form .col-6-select .container-birth-date select,
+form.sign-up-form .col-6-select .container-gender select {
+  border: none;
+  border-bottom: 1px solid #f2f2f2;
+  position: relative;
+  top: 15px;
+}
+form.sign-up-form .col-6-input .container-birth-date input,
+form.sign-up-form .col-6-input .container-gender input,
+form.sign-up-form .col-6-select .container-birth-date input,
+form.sign-up-form .col-6-select .container-gender input {
+  position: relative;
+  right: 5px;
+  top: 8px;
+  color: #5A61ED;
+}
+form.sign-up-form .col-6-input .container-birth-date span,
+form.sign-up-form .col-6-input .container-gender span,
+form.sign-up-form .col-6-select .container-birth-date span,
+form.sign-up-form .col-6-select .container-gender span {
+  position: relative;
+  top: 8px;
+}
+form.sign-up-form .col-6-input label,
+form.sign-up-form .col-6-select label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7C7C7C;
+  width: 100%;
+}
+form.sign-up-form .col-6-input .input-sign-up-form,
+form.sign-up-form .col-6-input .select-sign-up-form,
+form.sign-up-form .col-6-select .input-sign-up-form,
+form.sign-up-form .col-6-select .select-sign-up-form {
+  border: none;
+  border-bottom: 1px solid #f2f2f2;
+  width: 100%;
+  height: 20px;
+  padding-bottom: 6px;
+}
+form.sign-up-form .col-6-input .col-6-text-link,
+form.sign-up-form .col-6-select .col-6-text-link {
+  display: flex;
+  flex-wrap: nowrap;
+}
+form.sign-up-form .col-6-input ::placeholderm,
+form.sign-up-form .col-6-select ::placeholderm {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #111111;
+}
+form.sign-up-form .col-6-text-link {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 147px;
+  justify-content: space-between;
+}
+form.sign-up-form .col-6-text-link a {
+  font-size: 13px;
+  color: #5A61ED;
+  position: relative;
+  top: 3px;
+}
+form.sign-up-form .col-6-text-link input {
+  background: #5A61ED;
+  border: 0.5px solid #FFFFFF;
+  color: #ffffff;
+  width: 154px;
+  height: 32px;
+  font-family: PT Sans;
+}
+
+.bottom-block {
+  position: relative;
+  top: 55px;
+}
+
+.to-top {
+  position: relative;
+  bottom: 20px;
+}
+
+.to-top-up {
+  position: relative;
+  bottom: 35px;
+}
+
+.zindex {
+  z-index: 100000;
+}
+
+/*  Icone */
+.icone {
+  width: 411px;
+  background: url(../img/bgg.png);
+  height: 411px;
+  z-index: -1;
+  position: relative;
+  bottom: 290px;
+  left: 40%;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    height: auto;
+  }
+
+  .left-block,
+.icone {
+    display: none;
+  }
+
+  .to-top {
+    position: relative;
+    bottom: 0;
+  }
+
+  .to-top-up {
+    position: relative;
+    bottom: 0;
+  }
+
+  .bottom-block {
+    position: relative;
+    top: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
